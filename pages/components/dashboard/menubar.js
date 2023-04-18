@@ -17,9 +17,9 @@ export default function Menubar() {
           <div className={styles.sidebar}>
             <Link href={"/"} className={styles.link} style={{fontWeight:"600"}}>
               <span>
-                <FontAwesomeIcon
+                <FontAwesomeIcon 
                   icon={faDashboard}
-                  style={{ color: "white"}}
+                  style={{ color: "white",maxHeight:"18px"}}
                 />
               </span>
               DashBoard
