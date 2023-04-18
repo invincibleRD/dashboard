@@ -6,9 +6,41 @@ const Boxes = function () {
       <div className={styles.box_con}>
         <div className={styles.box_card}>boxi</div>
         <div className={styles.box_card}>
-          <div>Today's schedule</div>
+          <div className={styles.box_con}>
+            <h4 style={{ marginBottom: "8px" }}>Today's schedule</h4>
+            <div style={{fontSize:'.8rem'}}>See All</div>
+          </div>
           <div>
-            <div>data</div>
+            <div>
+              <div className={styles.info}>
+                <div
+                  className={styles.info_text}
+                  style={{ backgroundColor: "#9BDD7C" }}
+                ></div>
+                <div style={{ fontSize: ".8rem" }}>
+                  <div style={{ color: "#666666" }}>
+                    Meeting with suppliers from Kuta Bali
+                  </div>
+                  <div style={{ color: "#999999" }}>14.00-15.00</div>
+                  <div style={{ color: "#999999" }}>
+                    at Sunset Road, Kuta, Bali{" "}
+                  </div>
+                </div>
+              </div>
+              <div className={styles.info}>
+                <div
+                  className={styles.info_text}
+                  style={{ backgroundColor: "#6972C3" }}
+                ></div>
+                <div style={{ fontSize: ".8rem" }}>
+                  <div style={{ color: "#666666" }}>
+                    Check operation at Giga Factory 1
+                  </div>
+                  <div style={{ color: "#999999" }}>18.00-20.00</div>
+                  <div style={{ color: "#999999" }}>at Central Jakarta </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>

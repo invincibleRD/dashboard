@@ -41,11 +41,21 @@
     justify-content: space-between;
 }
 .box_card{
-    padding: 20px;
+    padding: 20px 30px;
     background-color: white;
     width: 47%;
     border-radius: 20px;
     height: 165px;
+}
+.info{
+    padding: 3px 0px;
+    display: flex;
+    flex-direction: row;
+}
+.info_text{
+    margin-right: 10px;
+    width: 3px;
+    height: 45px;
 }
 .top {
   margin: 20px 0px;
