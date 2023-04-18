@@ -26,7 +26,7 @@ export default function Menubar() {
             </Link>
             <Link href={"/"} className={styles.link}>
               <span>
-                <FontAwesomeIcon icon={faTags} style={{ color: "white" }} />
+                <FontAwesomeIcon icon={faTags} style={{ color: "white",maxHeight:"18px" }} />
               </span>
               Transactions
             </Link>
@@ -34,7 +34,7 @@ export default function Menubar() {
               <span>
                 <FontAwesomeIcon
                   icon={faCalendarAlt}
-                  style={{ color: "white" }}
+                  style={{ color: "white",maxHeight:"18px" }}
                 />
               </span>
               Schedules
@@ -43,7 +43,7 @@ export default function Menubar() {
               <span>
                 <FontAwesomeIcon
                   icon={faUserCircle}
-                  style={{ color: "white" }}
+                  style={{ color: "white",maxHeight:"18px" }}
                 />
               </span>
               User
