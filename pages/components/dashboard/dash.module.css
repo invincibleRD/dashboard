@@ -9,6 +9,44 @@
   flex-direction: column;
   justify-content: space-between;
 }
+.card_con{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    flex-direction: row;
+}
+.card{
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 20px;
+    width:200px;
+    height: 100px;
+    background-color: white;
+}
+.card_text{
+    padding-top: 20px;
+    font-size: .8rem;
+}
+
+.graph_con{
+    margin: 20px 0px;;
+    background-color: white;
+    height: 250px;
+    border-radius: 20px;
+}
+.box_con{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.box_card{
+    padding: 20px;
+    background-color: white;
+    width: 47%;
+    border-radius: 20px;
+    height: 165px;
+}
 .top {
   margin: 20px 0px;
   font-weight: 600;
