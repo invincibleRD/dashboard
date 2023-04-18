@@ -1,0 +1,98 @@
+.board {
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+.board div {
+  font-weight: 600;
+  font-size: 5rem;
+}
+.container {
+  background-color: #f8f4f4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.signUpbox {
+  /* padding: 10px; */
+  min-width: 400px;
+}
+.header {
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+.title {
+  font-weight: 600;
+}
+.withSign {
+  justify-content: space-between;
+  display: flex;
+  flex-direction: row;
+}
+.paddings {
+  padding-left: 4px;
+}
+.google {
+  cursor: pointer;
+  font-size: 0.8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: var(--border-radius);
+  padding: 10px;
+  margin: 5px;
+  background-color: white;
+  width: 100%;
+}
+
+.formInputs {
+  margin: 5px;
+  padding: 30px;
+  background-color: white;
+  border-radius: var(--border-radius);
+}
+.formInputs input,
+.submitButton {
+  margin-top: 8px;
+  margin-bottom: 13px;
+  background-color: #ededed;
+  width: 100%;
+  height: 40px;
+  border: none;
+  padding: 10px;
+  border-radius: var(--border-radius);
+}
+.formInputs input{
+  outline: none;
+}
+.forgot {
+  font-size: 0.8rem;
+  cursor: pointer;
+  color: blue;
+  font-weight: 100;
+}
+.submitButton {
+  font-weight: 600;
+  cursor: pointer;
+  color: white;
+  background-color: black;
+}
+.register {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* Tablet view */
+
+@media screen and (max-width: 700px) {
+  .board div {
+    font-size: 3rem;
+  }
+  .signUpbox {
+    padding: 20% 2%;
+    width: 100%;
+    min-width: 300px;
+  }
+}

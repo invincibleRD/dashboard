@@ -1,0 +1,15 @@
+
+
+
+.container{
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns:40% 1fr ;
+  }
+  @media screen and (max-width: 700px){
+    .container{
+      display: flex;
+      flex-direction: column;
+    }
+  }
+  
