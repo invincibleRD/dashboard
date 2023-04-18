@@ -1,0 +1,41 @@
+.container {
+  border-radius: 30px;
+  padding: 40px;
+  background-color: black;
+  color: white;
+  max-width: 250px;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.top {
+  margin: 20px 0px;
+  font-weight: 600;
+  font-size: 2.5rem;
+}
+.aside {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.aside span {
+    padding-right: 15px;
+}
+.sidebar {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.link {
+  margin: 15px 0px;
+}
+.footer{
+    display: flex;
+    flex-direction: column;
+    font-size: .8rem;
+}
+.footerContent{
+    padding: 10px;
+}
