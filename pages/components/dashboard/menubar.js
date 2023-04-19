@@ -10,7 +10,6 @@ import Link from "next/link";
 
 export default function Menubar() {
   return (
-    <>
       <div className={styles.container}>
         <aside className={styles.aside}>
           <div className={styles.top}>Board.</div>
@@ -62,6 +61,5 @@ export default function Menubar() {
           <Link href={"/"} className={styles.footerContent} >Contact Us</Link>
         </div>
       </div>
-    </>
   );
 }

@@ -4,3 +4,25 @@
     flex-direction: row;
     background-color: #F5F5F5;
 }
+.leftBox{
+    padding: 20px 0px 0px 30px;
+    width: 80%;
+}
+
+@media only screen and (max-width: 1130px) {
+    .menubar{
+        position: absolute;
+        z-index: +1;
+        visibility: hidden;
+    }
+    .leftBox{
+        padding: 15px;
+        width: 100%;
+    }
+    .container{
+        padding: 10px;
+    }
+}
+@media only screen and (max-width: 870px) {
+    
+}

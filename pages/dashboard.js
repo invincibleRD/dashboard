@@ -8,12 +8,16 @@ export default function Dashboard() {
   return (
     <>
       <div className={styles.container}>
-        <Menubar></Menubar>
-        <div style={{ paddingLeft:"20px", width:"80%"}}>
-          <Header></Header>
+        <div className={styles.menubar}>
+          <Menubar></Menubar>
+        </div>
+        <div className={styles.leftBox}>
+          <div>
+            <Header></Header>
             <Cards></Cards>
-            <Graph> </Graph> 
-          <Boxes></Boxes>
+            <Graph> </Graph>
+            <Boxes></Boxes>
+          </div>
         </div>
       </div>
     </>
