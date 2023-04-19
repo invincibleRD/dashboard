@@ -8,7 +8,9 @@
     padding: 20px 0px 0px 30px;
     width: 80%;
 }
-
+.option{
+    border: none;
+}
 @media only screen and (max-width: 1130px) {
     .menubar{
         position: absolute;
