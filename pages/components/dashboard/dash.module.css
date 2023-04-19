@@ -16,7 +16,7 @@
     width: 100%;
     flex-direction: row;
 }
-.card{
+.card{  
     padding: 20px;
     display: flex;
     justify-content: space-between;

@@ -21,7 +21,7 @@ ChartJS.register(
   LinearScale,
   PointElement
 );
-const Graph = function () {
+export default function Graph() {
   const arr1 = Data.data.user.january;
   const arr2 = Data.data.guest.january;
   const [data, setdata] = useState({
@@ -130,4 +130,3 @@ const Graph = function () {
   );
 };
 
-export default Graph;
