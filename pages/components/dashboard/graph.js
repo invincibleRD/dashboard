@@ -100,7 +100,7 @@ export default function Graph() {
         <div>
           <select
             style={{
-              position: "absolute",
+              position: "relative",
               border: "none",
               outline: "none",
             }}
