@@ -3,6 +3,7 @@
   padding: 40px;
   background-color: black;
   color: white;
+  width: 20%;
   max-width: 250px;
   height: 90vh;
   display: flex;
@@ -30,9 +31,10 @@
 }
 
 .graph_con{
-    margin: 20px 0px;;
+    padding: 30px;
+    margin: 20px 0px;
     background-color: white;
-    height: 250px;
+    height: 280px;
     border-radius: 20px;
 }
 .box_con{
@@ -43,9 +45,15 @@
 .box_card{
     padding: 20px 30px;
     background-color: white;
-    width: 47%;
+    width: 49%;
     border-radius: 20px;
     height: 165px;
+}
+.pie_chart{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: red;
 }
 .info{
     padding: 3px 0px;

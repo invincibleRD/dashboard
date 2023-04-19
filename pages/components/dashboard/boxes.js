@@ -4,11 +4,30 @@ const Boxes = function () {
   return (
     <>
       <div className={styles.box_con}>
-        <div className={styles.box_card}>boxi</div>
         <div className={styles.box_card}>
           <div className={styles.box_con}>
             <h4 style={{ marginBottom: "8px" }}>Today's schedule</h4>
-            <div style={{fontSize:'.8rem'}}>See All</div>
+            <div style={{ fontSize: ".8rem" }}>May-June 2023</div>
+          </div>
+          <div className={styles.pie_chart}>
+            <div>piechart</div>
+            <div>
+              <div>
+                <span className='circle'></span>
+              </div>
+              <div>
+                basic trees
+              </div>
+              <div>
+                basic trees
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className={styles.box_card}>
+          <div className={styles.box_con}>
+            <h4 style={{ marginBottom: "8px" }}>Today's schedule</h4>
+            <div style={{ fontSize: ".8rem" }}>See All</div>
           </div>
           <div>
             <div>
