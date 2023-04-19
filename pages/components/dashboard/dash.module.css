@@ -108,7 +108,9 @@
         flex-direction: column;
     }
     .box_card{
-        
+       width: 100%; 
+       margin-bottom:20px ;
+       height: auto;
     }
     .card{
         margin: 0px 10px 10px 0px;

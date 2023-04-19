@@ -97,10 +97,10 @@ export default function Graph() {
     <div className={s.graph_con}>
       <div className="graph-p">Activities</div>
       <div>
-        <div>
+        <div style={{position : "relative"}}>
           <select
             style={{
-              position: "relative",
+              position: "absolute",
               border: "none",
               outline: "none",
             }}
