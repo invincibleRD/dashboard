@@ -99,8 +99,11 @@ const Boxes = function () {
                 <span className='circle'></span>
               </div>
               <div className="graph-p1"><span style = {{backgroundColor:"#98D89E"}}className="dot"></span>Basic Trees</div>
+               <p style = {{marginLeft : "15px"}}>{Math.floor(data.datasets[0].data[0]/(data.datasets[0].data[0]+data.datasets[0].data[1]+data.datasets[0].data[2])*100) + "%"}</p>
               <div className="graph-p1"><span  style = {{backgroundColor : "#EE8484"}}className="dot"></span>Custom Short Pants</div>
+              <p  style = {{marginLeft : "15px"}}>{Math.floor(data.datasets[0].data[1]/(data.datasets[0].data[0] + data.datasets[0].data[1] + data.datasets[0].data[2])*100) + "%"}</p>
               <div className="graph-p1"><span style = {{backgroundColor:"#F6DC7D"}}className="dot"></span>Super Hoodies</div>
+              <p  style = {{marginLeft : "15px"}}>{Math.floor(data.datasets[0].data[2]/(data.datasets[0].data[0] + data.datasets[0].data[1] + data.datasets[0].data[2])*100) + "%"}</p>
             </div>
           </div>
         </div>

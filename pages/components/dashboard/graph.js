@@ -1,5 +1,5 @@
 import s from "./dash.module.css";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Line } from "react-chartjs-2";
 import {
   Chart as ChartJS,
@@ -11,7 +11,6 @@ import {
   LinearScale,
   PointElement,
 } from "chart.js";
-import clientPromise from "../../../lib/mongodb";
 ChartJS.register(
   Title,
   Tooltip,
@@ -21,35 +20,35 @@ ChartJS.register(
   LinearScale,
   PointElement
 );
-export default function Graph({dash}) {
-    console.log(dash)
-    const Data = {
-        label: ["Weeks1", "Weeks2", "Weeks3", "Weeks4"],
-        data: {
-          user: {
-            january: [92, 78, 90, 56],
-            fabuary: [92, 43, 33, 56],
-            march: [56, 65, 88, 56],
-            april: [34, 90, 77, 56],
-            may: [33, 45, 98, 56],
-            june: [77, 43, 54, 45]
-          },
-          guest: {
-            january: [45, 34, 89, 67],
-            fabuary: [56, 79, 56, 34],
-            march: [78, 23, 90, 56],
-            april: [45, 78, 76, 90],
-            may: [54, 88, 90, 56],
-            june: [88, 58, 67, 34]
-          },
-          products: {
-            basic_tees: 55,
-            custom_short_pants: 31,
-            super_hoodies: 14
-          }
-        }
-      };
-      
+export default function Graph() {
+   
+  const Data = {
+    label: ["Weeks1", "Weeks2", "Weeks3", "Weeks4"],
+    data: {
+      user: {
+        january: [92, 78, 90, 56],
+        fabuary: [92, 43, 33, 56],
+        march: [56, 65, 88, 56],
+        april: [34, 90, 77, 56],
+        may: [33, 45, 98, 56],
+        june: [77, 43, 54, 45],
+      },
+      guest: {
+        january: [45, 34, 89, 67],
+        fabuary: [56, 79, 56, 34],
+        march: [78, 23, 90, 56],
+        april: [45, 78, 76, 90],
+        may: [54, 88, 90, 56],
+        june: [88, 58, 67, 34],
+      },
+      products: {
+        basic_tees: 55,
+        custom_short_pants: 31,
+        super_hoodies: 14,
+      },
+    },
+  };
+
   const arr1 = Data.data.user.january;
   const arr2 = Data.data.guest.january;
   const [data, setdata] = useState({
@@ -69,7 +68,7 @@ export default function Graph({dash}) {
         tension: 0.4,
         pointRadius: 0,
         borderColor: "#E9A0A0", // color of lines second guest
-        borderWidth: 2
+        borderWidth: 2,
       },
     ],
   });
@@ -81,30 +80,30 @@ export default function Graph({dash}) {
     },
     plugins: {
       legend: {
-          labels: {
-          usePointStyle : true,
+        labels: {
+          usePointStyle: true,
           font: {
             size: 16,
-            weight: 'bold',
-            family: 'Arial',
+            weight: "bold",
+            family: "Arial",
           },
-          color: '#333',
-          pointStyle: 'circle',
-          pointRadius : 2
+          color: "#333",
+          pointStyle: "circle",
+          pointRadius: 2,
         },
         // other options for the legend here
       },
     },
     scales: {
       x: {
-        grid : {
-          display : false,
-        }
+        grid: {
+          display: false,
+        },
       },
       y: {
         beginAtZero: true,
         ticks: {
-          stepSize : 30,
+          stepSize: 30,
           maxTicksLimit: 5, // maximum number of ticks to display
         },
       },
@@ -114,7 +113,7 @@ export default function Graph({dash}) {
     <div className={s.graph_con}>
       <div className="graph-p">Activities</div>
       <div>
-        <div style={{position : "relative"}}>
+        <div style={{ position: "relative" }}>
           <select
             style={{
               position: "absolute",
@@ -170,21 +169,4 @@ export default function Graph({dash}) {
       </div>
     </div>
   );
-};
-
-export async function getServerSideProps() {
-    try {
-      const client = await clientPromise;
-      const db = client.db("bookings");
-  
-      const dash = await db.collection("dashboard").find({}).toArray();
-  
-      return {
-        props: { teachers: JSON.parse(JSON.stringify(dash)) },
-      };
-    } catch (e) {
-      console.error(e);
-    }
-  }
-  
-
+}

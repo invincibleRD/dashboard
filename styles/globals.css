@@ -118,3 +118,25 @@ a {
   border-radius: 50%;
   display: inline-block;
 }
+.dot1 {
+  height: 30px;
+  width: 30px;
+  margin:0 ;
+  padding : 0;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+}
+.dashboard-header {
+  display : flex ;
+  justify-content: space-between;
+  margin-bottom: 25px;
+}
+.dashboard-header input {
+  border-radius: 5px;
+  padding : 10px;
+  outline : none ;
+  border : none ;
+  background-color: white;
+  height : 30px;
+}
