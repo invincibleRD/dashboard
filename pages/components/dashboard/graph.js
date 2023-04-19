@@ -82,8 +82,10 @@ export default function Graph() {
           display: false,
         },
         ticks :  {
-         align : "center"
-        }
+
+          style : {
+          justifyContent : "space-evenly"
+        }}
       },
       y: {
         zeroLineWidth: 0, // hide the y-axis line that connects to the origin

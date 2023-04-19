@@ -19,7 +19,7 @@
 }
 
 .card {
-    position: relative;
+  position: relative;
   padding: 20px;
   display: flex;
   justify-content: space-between;
@@ -33,9 +33,9 @@
   font-size: 0.8rem;
 }
 
-.card_icon{
-    position: absolute;
-    right:20px;
+.card_icon {
+  position: absolute;
+  right: 20px;
 }
 
 .graph_con {
@@ -111,17 +111,17 @@
 
 /* phones*/
 @media only screen and (max-width: 870px) {
-    .box_con{
-        flex-direction: column;
-    }
-    .box_card{
-       width: 100%; 
-       margin-bottom:20px ;
-       height: auto;
-    }
-    .card{
-        margin: 0px 10px 10px 0px;
-    }
+  .box_con {
+    flex-direction: column;
+  }
+  .box_card {
+    width: 100%;
+    margin-bottom: 20px;
+    height: auto;
+  }
+  .card {
+    margin: 0px 10px 10px 0px;
+  }
   .card_con {
     display: grid;
     justify-content: space-between;
@@ -133,13 +133,14 @@
   .card_con {
     grid-template-columns: repeat(2, minmax(50%, auto));
   }
-  .card_text{
-    font-size: .7rem;
-  }
 }
 @media only screen and (max-width: 470px) {
-  .card{
-    padding: 15px 0px 0px 10px;
+  .card_text {
+    font-size: 0.7rem;
+  }
+  .card {
+    padding: 15px px 0px 10px;
     width: 150px;
+    margin-right: 10px;
   }
 }
