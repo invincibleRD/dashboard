@@ -81,6 +81,9 @@ export default function Graph() {
         grid: {
           display: false,
         },
+        ticks :  {
+         align : "center"
+        }
       },
       y: {
         zeroLineWidth: 0, // hide the y-axis line that connects to the origin
