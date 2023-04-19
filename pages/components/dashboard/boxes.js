@@ -5,7 +5,7 @@ const Boxes = function () {
     <>
       <div className={styles.box_con}>
         <div className={styles.box_card}>
-          <div className={styles.box_con}>
+          <div className={ styles.box_con1}>
             <h4 style={{ marginBottom: "8px" }}>Today's schedule</h4>
             <div style={{ fontSize: ".8rem" }}>May-June 2023</div>
           </div>
@@ -25,7 +25,7 @@ const Boxes = function () {
           </div>
         </div>
         <div className={styles.box_card}>
-          <div className={styles.box_con}>
+          <div className={styles.box_con1}>
             <h4 style={{ marginBottom: "8px" }}>Today's schedule</h4>
             <div style={{ fontSize: ".8rem" }}>See All</div>
           </div>

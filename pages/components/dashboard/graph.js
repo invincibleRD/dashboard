@@ -53,7 +53,7 @@ export default function Graph() {
     labels: Data.label,
     datasets: [
       {
-        label: "First Dataset",
+        label: "User",
         data: arr1,
         tension: 0.4,
         pointRadius: 0,
@@ -61,7 +61,7 @@ export default function Graph() {
         borderWidth: 2,
       },
       {
-        label: "Second Dataset",
+        label: "Guest",
         data: arr2,
         tension: 0.4,
         pointRadius: 0,
@@ -78,19 +78,16 @@ export default function Graph() {
     },
     scales: {
       x: {
-        grid: {
-          display: false,
-        },
-        ticks :  {
-
-          style : {
-          justifyContent : "space-evenly"
-        }}
+        grid : {
+          borderColor : "transparent",
+          display : false,
+        }
       },
       y: {
-        zeroLineWidth: 0, // hide the y-axis line that connects to the origin
-        zeroLineColor: 'transparent',
         beginAtZero: true,
+        grid : {
+          drawBorder : false,
+        },
         ticks: {
           stepSize : 30,
           maxTicksLimit: 5, // maximum number of ticks to display
