@@ -3,7 +3,8 @@ import Cards from "./components/dashboard/cards";
 import Header from "./components/dashboard/header";
 import Menubar from "./components/dashboard/menubar";
 import styles from "./dashboard.module.css";
-import Graph from "./components/dashboard/graph.js";
+import Graph from "./components/dashboard/graph";
+import Top from "./dataa";
 export default function Dashboard() {
   return (
     <>
@@ -16,6 +17,7 @@ export default function Dashboard() {
             <Header></Header>
             <Cards></Cards>
             <Graph> </Graph>
+            {/* <Top></Top> */}
             <Boxes></Boxes>
           </div>
         </div>
