@@ -12,7 +12,7 @@ export default function Dashboard() {
         <div style={{ paddingLeft:"20px", width:"80%"}}>
           <Header></Header>
             <Cards></Cards>
-            {/* <Graph> </Graph>  */}
+            <Graph> </Graph> 
           <Boxes></Boxes>
         </div>
       </div>
