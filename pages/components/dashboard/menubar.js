@@ -3,6 +3,7 @@ import {
   faDashboard,
   faUserCircle,
   faCalendarAlt,
+  faBars
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import styles from "./dash.module.css";
