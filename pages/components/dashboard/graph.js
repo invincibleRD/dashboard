@@ -11,6 +11,7 @@ import {
   LinearScale,
   PointElement,
 } from "chart.js";
+import clientPromise from "../../../lib/mongodb";
 ChartJS.register(
   Title,
   Tooltip,
@@ -20,7 +21,8 @@ ChartJS.register(
   LinearScale,
   PointElement
 );
-export default function Graph() {
+export default function Graph({dash}) {
+    console.log(dash)
     const Data = {
         label: ["Weeks1", "Weeks2", "Weeks3", "Weeks4"],
         data: {
@@ -47,6 +49,7 @@ export default function Graph() {
           }
         }
       };
+      
   const arr1 = Data.data.user.january;
   const arr2 = Data.data.guest.january;
   const [data, setdata] = useState({
@@ -66,7 +69,7 @@ export default function Graph() {
         tension: 0.4,
         pointRadius: 0,
         borderColor: "#E9A0A0", // color of lines second guest
-        borderWidth: 2,
+        borderWidth: 2
       },
     ],
   });
@@ -76,18 +79,30 @@ export default function Graph() {
     legend: {
       display: false,
     },
+    plugins: {
+      legend: {
+          labels: {
+          usePointStyle : true,
+          font: {
+            size: 16,
+            weight: 'bold',
+            family: 'Arial',
+          },
+          color: '#333',
+          pointStyle: 'circle',
+          pointRadius : 2
+        },
+        // other options for the legend here
+      },
+    },
     scales: {
       x: {
         grid : {
-          borderColor : "transparent",
           display : false,
         }
       },
       y: {
         beginAtZero: true,
-        grid : {
-          drawBorder : false,
-        },
         ticks: {
           stepSize : 30,
           maxTicksLimit: 5, // maximum number of ticks to display
@@ -156,4 +171,20 @@ export default function Graph() {
     </div>
   );
 };
+
+export async function getServerSideProps() {
+    try {
+      const client = await clientPromise;
+      const db = client.db("bookings");
+  
+      const dash = await db.collection("dashboard").find({}).toArray();
+  
+      return {
+        props: { teachers: JSON.parse(JSON.stringify(dash)) },
+      };
+    } catch (e) {
+      console.error(e);
+    }
+  }
+  
 
