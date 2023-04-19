@@ -83,11 +83,11 @@ export default function Graph() {
         },
       },
       y: {
+        zeroLineWidth: 0, // hide the y-axis line that connects to the origin
+        zeroLineColor: 'transparent',
         beginAtZero: true,
         ticks: {
-          callback: function (value, index, values) {
-            return value; // divide by 1000 and add 'k' suffix
-          },
+          stepSize : 30,
           maxTicksLimit: 5, // maximum number of ticks to display
         },
       },
