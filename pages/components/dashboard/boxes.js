@@ -5,7 +5,7 @@ import { Pie } from "react-chartjs-2";
 
 ChartJS.register(ArcElement, Tooltip, Legend);
 const dat = {
-  january: [92, 78, 90],
+  january: [55, 31, 34],
   fabuary: [92, 43, 33],
   march: [56, 65, 88],
   april: [34, 90, 77],

@@ -9,12 +9,12 @@ export default function Home() {
     <>
       <div>
         <div className="main-container">
-          <h1>
+          <div>
             Click to <Link href={"login"}  style={{color:"blue"}}>Login</Link> page
-          </h1>
-          <h1>
+          </div>
+          <div>
             Click to<Link href={"dashboard"} style={{color:"blue"}}> DashBoard </Link>page
-          </h1>
+          </div>
         </div>
       </div>
     </>

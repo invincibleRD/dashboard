@@ -12,7 +12,7 @@ import Link from "next/link";
 export default function Menubar() {
   return (
     <>
-      <div className={styles.container}>
+      <div className={`${styles.container}`} >
         <aside className={styles.aside}>
           <div className={styles.top}>Board.</div>
           <div className={styles.sidebar}>
