@@ -1,6 +1,6 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import styles from "./dash.module.css";
-import { faCalendar, faCircle, faGauge, faTags, faThumbsUp, faUserGroup } from "@fortawesome/free-solid-svg-icons";
+import { faCalendar, faCircle, faGauge, faMoneyBills, faTags, faThumbsUp, faUserGroup } from "@fortawesome/free-solid-svg-icons";
 
 export default function Cards() {
   return (
@@ -12,7 +12,7 @@ export default function Cards() {
             <h2>$2,129,430</h2>
           </div>
           <div className={styles.card_icon}>
-            <FontAwesomeIcon icon={faGauge}></FontAwesomeIcon>
+            <FontAwesomeIcon icon={faMoneyBills}></FontAwesomeIcon>
           </div>
         </div>
         <div className={styles.card} style={{ backgroundColor: "#F4ECDD" }}>

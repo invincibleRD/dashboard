@@ -4,16 +4,17 @@ import { useState, useEffect } from "react";
 import Menubar from "./menubar";
 function useReturn() {
   const [arr, changearr] = useState([1000]);
-  if (typeof window === undefined) return 1000;
-//   useEffect(() => {
-//     return ()=> {window.addEventListener("resize", () => {
-//       changearr(window.innerWidth);
-//     });}
-//   }, []);
+  useEffect(() => {
+    const callback = ()=> {
+        changearr(window.innerWidth) ;
+    }
+    window.addEventListener("resize", callback)
+    return ()=> {window.removeEventListener("resize", callback)}
+  }, []);
   return arr;
 }
 export default function Header() {
-  const a = useReturn();
+     const a = useReturn();
   const [disp, changedisp] = useState("none");
   const [font, changefont] = useState(true);
   return (

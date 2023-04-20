@@ -27,7 +27,7 @@ ChartJS.register(
   PointElement
 );
 export default function Dashboard({ dashboard }) {
-  console.log(dashboard);
+  // console.log(dashboard);
   let Data = dashboard[4].data;
   const arr1 = [100, 390, 420, 150, 300, 450, 350, 180, 280];
   const arr2 = [200, 390, 270, 200, 270, 300, 270, 220, 450];
