@@ -11,9 +11,9 @@ const inter = Inter({ subsets: ["latin"] });
 export default function Login() {
   const session =useSession();
   console.log(session);
-  if (session.data === null) {
-    return <button onClick={signIn}>login</button>;
-  }
+  // if (session.data === null) {
+  //   return <button onClick={signIn}>login</button>;
+  // }
   return (
     <>
       <Head>
@@ -22,7 +22,7 @@ export default function Login() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-        <button onClick={signOut}>logout</button>
+        {/* <button onClick={signOut}>logout</button> */}
       <div className={styles.container}>
         <Board />
 
