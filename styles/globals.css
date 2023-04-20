@@ -174,4 +174,7 @@ a {
   .topicon,.topIcon {
     display:none ;
   }
+  .main-container{
+    font-size: 1rem;
+  }
 }

@@ -28,11 +28,11 @@ ChartJS.register(
 );
 export default function Dashboard({ dashboard }) {
   // console.log(dashboard);
-  let Data = dashboard[4].data;
+  let Data = dashboard[0].data;
   const arr1 = [100, 390, 420, 150, 300, 450, 350, 180, 280];
   const arr2 = [200, 390, 270, 200, 270, 300, 270, 220, 450];
   const [data, setdata] = useState({
-    labels: dashboard[4].label,
+    labels: dashboard[0].label,
     datasets: [
       {
         label: "User",

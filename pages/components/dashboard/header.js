@@ -26,7 +26,7 @@ export default function Header() {
           style={{
             cursor: "pointer",
             height: "18px",
-            width: "15px",
+            width: "18px",
             top: "60px",
             margin: "5px",
             marginRight: "20px",
