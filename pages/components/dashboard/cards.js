@@ -1,6 +1,6 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import styles from "./dash.module.css";
-import { faTags } from "@fortawesome/free-solid-svg-icons";
+import { faCalendar, faCircle, faGauge, faTags, faThumbsUp, faUserGroup } from "@fortawesome/free-solid-svg-icons";
 
 export default function Cards() {
   return (
@@ -12,7 +12,7 @@ export default function Cards() {
             <h3>$12345</h3>
           </div>
           <div className={styles.card_icon}>
-            <FontAwesomeIcon icon={faTags}></FontAwesomeIcon>
+            <FontAwesomeIcon icon={faGauge}></FontAwesomeIcon>
           </div>
         </div>
         <div className={styles.card} style={{ backgroundColor: "#F4ECDD" }}>
@@ -30,7 +30,7 @@ export default function Cards() {
             <h3>345</h3>
           </div>
           <div className={styles.card_icon}>
-            <FontAwesomeIcon icon={faTags}></FontAwesomeIcon>
+            <FontAwesomeIcon icon={faThumbsUp}></FontAwesomeIcon>
           </div>
         </div>
         <div className={styles.card} style={{ backgroundColor: "#DEE0EF" }}>
@@ -39,7 +39,7 @@ export default function Cards() {
             <h3>3434</h3>
           </div>
           <div className={styles.card_icon}>
-            <FontAwesomeIcon icon={faTags}></FontAwesomeIcon>
+            <FontAwesomeIcon icon={faUserGroup}></FontAwesomeIcon>
           </div>
         </div>
         {/* <div className={styles.card} style={{backgroundColor:" #F4ECDD"}}>

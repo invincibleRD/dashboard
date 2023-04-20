@@ -1,0 +1,28 @@
+{"_id":{"$oid":"6440c650d5ec0d50e36d0ede"},
+
+    "label": ["Weeks1", "Weeks2", "Weeks3", "Weeks4"],
+    "data": {
+      "user": {
+        "january": [92, 78, 90, 56,67],
+        "fabuary": [92, 43, 33, 56,45],
+        "march": [56, 65, 88, 56,45],
+        "april": [34, 90, 77, 56,98],
+        "may": [33, 45, 98, 56,88],
+        "june": [77, 43, 54, 45,89]
+      },
+      "guest": {
+        "january": [45, 34, 89, 67,67],
+        "fabuary": [56, 79, 56, 34,67],
+        "march": [78, 23, 90, 56,97],
+        "april": [45, 78, 76, 90,56],
+        "may": [54, 88, 90, 56,67],
+        "june": [88, 58, 67, 34,67]
+      },
+      "products": {
+        "basic_tees": 55,
+        "custom_short_pants": 31,
+        "super_hoodies": 14
+      }
+    
+  }
+}
