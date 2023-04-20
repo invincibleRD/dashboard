@@ -1,16 +1,15 @@
-import { faBell, faBars, faCross } from "@fortawesome/free-solid-svg-icons";
+import { faBell, faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useState, useEffect } from "react";
 import Menubar from "./menubar";
 function useReturn() {
   const [arr, changearr] = useState([1000]);
   if (typeof window === undefined) return 1000;
-  useEffect(() => {
-    console.log(arr);
-    window.addEventListener("resize", () => {
-      changearr(window.innerWidth);
-    });
-  }, []);
+//   useEffect(() => {
+//     return ()=> {window.addEventListener("resize", () => {
+//       changearr(window.innerWidth);
+//     });}
+//   }, []);
   return arr;
 }
 export default function Header() {
@@ -22,7 +21,7 @@ export default function Header() {
       <div className="menubar-icon-header">
         <FontAwesomeIcon
           className="head-font"
-          icon={font ? faBars : faCross}
+          icon={font ? faBars : faXmark}
           style={{
             cursor: "pointer",
             height: "18px",

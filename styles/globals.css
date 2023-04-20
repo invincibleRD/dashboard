@@ -96,10 +96,20 @@ a {
   text-decoration: none;
 }
 
+
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
   }
+}
+
+
+.main-container{
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .graph-p   {
   font-weight: 700;
@@ -130,6 +140,7 @@ a {
 }
 .dashboard-header {
   display : flex ;
+  width : 100%;
   justify-content: space-between;
   margin-bottom: 20px;
 }
