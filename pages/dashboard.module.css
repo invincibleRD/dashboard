@@ -12,12 +12,10 @@
 .option{
     border: none;
 }
+.menubar{
+    position: fixed;
+}
 @media only screen and (max-width: 1130px) {
-    .menubar{
-        position: absolute;
-        z-index: +1;
-        visibility: hidden;
-    }
     .leftBox{
         padding: 15px;
         width: 100%;

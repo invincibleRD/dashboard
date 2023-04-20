@@ -116,6 +116,13 @@
 /* tablets*/
 
 @media only screen and (max-width: 1130px) {
+
+  .container{
+    height: 500px;
+    width: 150px;
+    padding: 40px;
+  }
+
 }
 
 /* phones*/

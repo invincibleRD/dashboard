@@ -2,6 +2,7 @@ import { faBell, faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useState, useEffect } from "react";
 import Menubar from "./menubar";
+import Image from "next/image";
 function useReturn() {
   const [arr, changearr] = useState([1000]);
   useEffect(() => {
@@ -68,10 +69,12 @@ export default function Header() {
               style={{ height: "30px" }}
               icon={faBell}
             ></FontAwesomeIcon>
-            <img
+            <Image
               className="dot1"
               src={"https://www.w3schools.com/howto/img_avatar.png"}
               alt={"this is an image"}
+              width={100}
+              height={100}
             />
           </div>
         </div>
