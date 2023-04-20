@@ -13,7 +13,9 @@ export default function SignUp() {
           <div className={styles.google}>
             <Link href={"dashboard"}>Sign in with Google</Link>
           </div>
-          <div className={styles.google}>Sign in with Apple</div>
+          <div className={styles.google}>
+            <Link href={"dashboard"}>Sign in with Apple</Link>
+          </div>
         </div>
         <form className={styles.formInputs}>
           <div className={styles.title}>Enter address</div>
@@ -49,7 +51,7 @@ export default function SignUp() {
           </div>
           <div className={`${styles.forgot}`}>Register here</div>
         </div>
-        <div style={{float:"right",paddingTop:"30px"}}>
+        <div style={{ float: "right", paddingTop: "30px" }}>
           <Link href={"/dashboard"}> CLick to view Dashboard</Link>
         </div>
       </div>

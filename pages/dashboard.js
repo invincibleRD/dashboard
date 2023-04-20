@@ -3,7 +3,6 @@ import Cards from "./components/dashboard/cards";
 import Header from "./components/dashboard/header";
 import Menubar from "./components/dashboard/menubar";
 import styles from "./dashboard.module.css";
-import Graph from "./components/dashboard/graph";
 import clientPromise from "../lib/mongodb";
 import s from "./components/dashboard/dash.module.css";
 import React, { useState, useEffect } from "react";
@@ -86,8 +85,10 @@ export default function Dashboard({ dashboard }) {
   return (
     <>
       <div className={styles.container}>
-        <div className={styles.menubar}>
-          <Menubar></Menubar>
+        <div className="fixed">
+          <div className={styles.menubar}>
+            <Menubar></Menubar>
+          </div>
         </div>
         <div className={styles.leftBox}>
           <div>
@@ -147,7 +148,7 @@ export default function Dashboard({ dashboard }) {
                     ></span>{" "}
                     Guest
                   </div>
-                  
+
                   <div className={s.lables}>
                     <span
                       className="dot"

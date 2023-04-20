@@ -146,12 +146,17 @@ a {
   margin-left: 30px;
 }
 .menubar-icon-header {  
-  display : none;
   position : relative;
+}
+.head-font {
+  display : none ;
 }
 @media only screen and (max-width: 1130px) {
   .menubar-icon-header {
       display : flex;
+  }
+  .head-font {
+    display : block
   }
 }
 @media only screen and (max-width : 600px) {
