@@ -145,11 +145,17 @@ a {
 .margin-right{
   margin-left: 30px;
 }
-.menubar-icon {
+.menubar-icon-header {  
   display : none;
+  position : relative;
 }
 @media only screen and (max-width: 1130px) {
-  /* .menubar-icon {
-    display : ;
-  } */
+  .menubar-icon-header {
+      display : flex;
+  }
+}
+@media only screen and (max-width : 600px) {
+  .topicon,.topIcon {
+    display:none ;
+  }
 }

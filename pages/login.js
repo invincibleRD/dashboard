@@ -21,6 +21,7 @@ export default function Login() {
       </Head>
       <div className={styles.container}>
         <Board />
+        
         <SignUp />
       </div>
     </>
