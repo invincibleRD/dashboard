@@ -1,5 +1,6 @@
 import Link from "next/link";
 import styles from "./components.module.css";
+import Image from "next/image";
 
 export default function SignUp() {
   return (
@@ -11,9 +12,21 @@ export default function SignUp() {
         </div>
         <div className={styles.withSign}>
           <div className={styles.google}>
-            <Link href={"dashboard"}>Sign in with Google</Link>
+            <Image
+              src={"/google.png"}
+              height={18}
+              width={18}
+              style={{ marginRight: "3px" }}
+            ></Image>{" "}
+            <Link href={"dashboard"}> Sign in with Google</Link>
           </div>
           <div className={styles.google}>
+            <Image
+              style={{ marginRight: "3px" }}
+              src={"/apple.png"}
+              height={18}
+              width={18}
+            ></Image>
             <Link href={"dashboard"}>Sign in with Apple</Link>
           </div>
         </div>
