@@ -29,14 +29,13 @@ ChartJS.register(
 export default function Dashboard({ dashboard }) {
   // console.log(dashboard);
   let Data = dashboard[0].data;
-  const arr1 = [100, 390, 420, 150, 300, 450, 350, 180, 280];
-  const arr2 = [200, 390, 270, 200, 270, 300, 270, 220, 450];
+  
   const [data, setdata] = useState({
     labels: dashboard[0].label,
     datasets: [
       {
         label: "User",
-        data: arr1,
+        data: Data.user['january'],
         tension: 0.4,
         pointRadius: 0,
         borderColor: "#9BDD7C", // color of lines first user
@@ -44,7 +43,7 @@ export default function Dashboard({ dashboard }) {
       },
       {
         label: "Guest",
-        data: arr2,
+        data: Data.guest['january'],
         tension: 0.4,
         pointRadius: 0,
         borderColor: "#E9A0A0", // color of lines second guest
